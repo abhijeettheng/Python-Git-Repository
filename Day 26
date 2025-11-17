@@ -1,0 +1,67 @@
+#Q1. Write a Python function to check if a number is prime.
+
+
+#Q1. Write a Python function to check if a number is prime.
+
+"""
+def check_prime(num):
+    if num < 2:
+        return False
+    elif num == 2:
+        return True
+    else:
+        for i in range(2, num):
+            if num % i == 0:
+                return False
+        return True
+
+
+num = int(input("Enter a number: "))
+if check_prime(num):
+    print("The number is prime.")
+else:
+    print("The number is not prime.")
+"""
+
+
+
+
+
+#Q2. Write a Python function to return the common elements between two lists.
+
+"""
+def common_elements(list1, list2):
+    common = []
+    for element in list1:
+        if element in list2 and element not in common:
+            common.append(element)
+    return common
+
+list1 = []
+list2 = []
+
+for i in range(5):
+    num = int(input(f"Enter number {i+1} for list 1: "))
+    list1.append(num)
+
+for i in range(5):
+    num = int(input(f"Enter number {i+1} for list 2: "))
+    list2.append(num)
+
+print("Common elements:", common_elements(list1, list2))
+"""
+
+
+#Q3. Write a Python program to find the second largest number in a list.
+
+
+def second_largest(numbers):
+    numbers = sorted(numbers)
+    return numbers[-2]
+
+numbers = []
+for i in range(5):
+    num = int(input(f"Enter number {i+1}: "))
+    numbers.append(num)
+
+print("Second largest:", second_largest(numbers))
