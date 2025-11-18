@@ -1,0 +1,65 @@
+#Q1. Write a Python function to count how many times a specific element appears in a list.
+
+"""
+def count_elements(lst, target):
+    return lst.count(target)
+
+lst = []
+
+for i in range(5):
+    num = input(f"Enter element {i+1}: ")
+    lst.append(num)
+
+target = input("Enter the element to count: ")
+
+print("Count:", count_elements(lst, target))
+"""
+
+
+
+#Q2. Write a Python program to merge two lists and remove duplicates.
+
+"""
+def merge(list1, list2):
+    merged = list1 + list2
+    merged = list(set(merged))  # remove duplicates
+    return merged
+
+list1 = []
+list2 = []
+
+for i in range(3):
+    num = int(input(f"Enter element {i+1} for List 1: "))
+    list1.append(num)
+
+for i in range(3):
+    num = int(input(f"Enter element {i+1} for List 2: "))
+    list2.append(num)
+
+print("Merged list without duplicates:", merge(list1, list2))
+"""
+
+
+
+
+#Q3. Write a Python function to check if a string is a valid palindrome when ignoring spaces and case.
+
+
+def palindrome(string):
+
+    string = string.replace(" ", "").lower()
+
+    if len(string) <= 1:
+        return True
+
+
+    if string[0] == string[-1]:
+        return palindrome(string[1:-1])
+    else:
+        return False
+
+string = input("Enter the string to check: ")
+if palindrome(string):
+    print("String is a palindrome")
+else:
+    print("String is not a palindrome")
