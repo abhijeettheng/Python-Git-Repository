@@ -1,0 +1,10 @@
+#Q. Write a Python function that returns a list with only the first letter of each word in a sentence.
+
+
+def first_letters(sentence):
+    words = sentence.split()           # split into words
+    result = [word[0] for word in words]   # take first letter of each
+    return result
+
+sentence = input("Enter a sentence: ")
+print(first_letters(sentence))
