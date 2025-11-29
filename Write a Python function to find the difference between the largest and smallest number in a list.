@@ -1,0 +1,15 @@
+#Q. Write a Python function to find the difference between the largest and smallest number in a list.
+
+
+def difference_largest_smallest(lst):
+    largest = max(lst)
+    smallest = min(lst)
+    return largest - smallest
+
+numbers = []
+
+for i in range(5):
+    num = int(input(f"Enter number {i+1}: "))
+    numbers.append(num)
+
+print("Difference:", difference_largest_smallest(numbers))
