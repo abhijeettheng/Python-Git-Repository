@@ -1,0 +1,23 @@
+#Q. Write a Python program to check if a string is a valid identifier.
+
+
+def is_valid_identifier(string):
+    if len(string) == 0:
+        return False
+
+    if not (string[0].isalpha() or string[0] == '_'):
+        return False
+
+    for char in string[1:]:
+        if not (char.isalnum() or char == '_'):
+            return False
+
+    return True
+
+
+text = input("Enter a string: ")
+
+if is_valid_identifier(text):
+    print("Valid identifier")
+else:
+    print("Not a valid identifier")
