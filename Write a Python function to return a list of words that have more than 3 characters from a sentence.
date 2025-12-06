@@ -1,0 +1,12 @@
+#Q. Write a Python function to return a list of words that have more than 3 characters from a sentence.
+
+
+def filter_long_words(text):
+    words = []
+    for word in text.split():
+        if len(word) > 3:
+            words.append(word)
+    return words
+
+sentence = input("Enter a sentence: ")
+print(filter_long_words(sentence))
