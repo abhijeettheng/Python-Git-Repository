@@ -1,0 +1,14 @@
+#Q. Write a Python function to count how many strings in a list start with a vowel.
+
+
+def count_vowel(words):
+    vowels = 'aeiouAEIOU'
+    count = 0
+    for word in words:
+        if word and word[0] in vowels:
+            count += 1
+    return count
+
+words = input("Enter the sentence: ").split()
+
+print("Strings starting with vowels:", count_vowel(words))
