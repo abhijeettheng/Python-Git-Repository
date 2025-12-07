@@ -1,0 +1,15 @@
+#Q. Write a Python function to return a dictionary with words as keys and their lengths as values.
+
+
+def word_length_dict(sentence):
+    words = sentence.split()
+    result = {}
+
+    for word in words:
+        result[word] = len(word)
+
+    return result
+
+sentence = input("Enter a sentence: ")
+
+print(word_length_dict(sentence))
