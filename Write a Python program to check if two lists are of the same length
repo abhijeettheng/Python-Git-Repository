@@ -1,0 +1,17 @@
+#Q. Write a Python program to check if two lists are of the same length.
+
+
+list1 = []
+for i in range(5):
+    num = int(input(f"List 1 - Enter number {i+1}: "))
+    list1.append(num)
+
+list2 = []
+for i in range(5):
+    num = int(input(f"List 2 - Enter number {i+1}: "))
+    list2.append(num)
+
+if len(list1) == len(list2):
+    print("Both lists are of the same length.")
+else:
+    print("The lists have different lengths.")
