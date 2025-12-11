@@ -1,0 +1,15 @@
+#Q. Write a Python function to check if a string contains only digits.
+
+
+def check_digits(string):
+    if string.isdigit():
+        return True
+    else:
+        return False
+
+string = input("Enter a string: ")
+
+if check_digits(string):
+    print("The string contains only digits.")
+else:
+    print("The string does not contain only digits.")
