@@ -1,0 +1,29 @@
+#Q1 Pyhton program to Add 2 Numbers.
+
+"""
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+sum = num1 + num2
+print("The sum is: ", sum)
+"""
+
+#Q2 Program to find the square root.
+
+"""
+num = float(input("Enter the number: "))
+square = num * num
+print("The square is: ", square)
+"""
+
+
+#Q3 Calculate area of triangle
+"""
+base = float(input("Enter the base: "))
+height = float(input("Enter the height: "))
+triangle = 1/2 * base * height
+print("The triangle is: ", triangle)
+"""
+
+
+
