@@ -25,5 +25,38 @@ triangle = 1/2 * base * height
 print("The triangle is: ", triangle)
 """
 
+#Q4 Python program to swap to variables
+"""
+def swap(a,b):
+    temp = a
+    a = b
+    b = temp
+    return a,b
 
+a = float(input("Enter the first number: "))
+b = float(input("Enter the second number: "))
+a,b = swap(a,b)
+print("The value of a is ", a,"and b ",b)
+"""
+
+
+#Q5 Kilometres to miles
+"""
+kms = float(input("Enter the kms: "))
+miles = (0.62137*kms)
+print("The miles is: ", miles)
+"""
+
+#Q6 Positive,negative or 0
+"""
+num = float(input("Enter the number: "))
+if num > 0:
+    print("The number is positive")
+elif num < 0:
+    print("The number is negative")
+else:
+    print("The number is zero")
+
+print("The number is: ", num)
+"""
 
